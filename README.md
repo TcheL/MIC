@@ -6,7 +6,7 @@ Matlab Collaboration for Inversion, including iterative methods and global optim
 
 [The MIT License](https://tchel.mit-license.org)
 
-##Inversion methods
+## Inversion methods
 
 ### Iterative methods
 - KA: Kaczmarz's Algorithm
