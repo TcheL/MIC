@@ -1,6 +1,6 @@
-# MCI
+# MIC
 
-Matlab Collaboration for Inversion, including iterative methods and global optimization methods.
+Matlab Inversion Collaboration, including iterative methods and global optimization methods.
 
 ## License
 
@@ -9,24 +9,24 @@ Matlab Collaboration for Inversion, including iterative methods and global optim
 ## Inversion methods
 
 ### Iterative methods
-- KA: Kaczmarz's Algorithm
-- ART: Algebraic Reconstruction Technique
-- SIRT: Simultaneous Iterative Reconstruction Technique
-- CG: Conjugate Gradient method
-- LM: Levenberg-Marquardt method
+- [KA](Kaczmarz.m): Kaczmarz's Algorithm
+- [ART](ART.m): Algebraic Reconstruction Technique
+- [SIRT](SIRT.m): Simultaneous Iterative Reconstruction Technique
+- [CG](ConjugateGradient.m): Conjugate Gradient method
+- [LM](LevenbergMarquardt.m): Levenberg-Marquardt method
 ### Global optimization methods
 
-- GS: Grid-Search method
-- MC: Monte-Carlo method
-- SA: Simulated Annealing method
-- GA: Genetic Algorithm
+- [GS](HighorderGridsearch.m): Grid-Search method
+- [MC](MentoCarlo.m): Monte-Carlo method
+- SA: Simulated Annealing method, including [Metropolis](Metropolis.m) and [HeatBath](HeatBath.m)
+- [GA](StandardGeneticAlgorithm.m): Genetic Algorithm
 
 ## Example
 
 There are two examples to demonstrate how to use these matlab function:
 
-- `example1.m` for LM, GS, MC, SA & GA
-- `example2.m` for KA, ART, SIRT & LM
+- [example1.m](example1.m) for LM, GS, MC, SA & GA
+- [example2.m](example2.m) for KA, ART, SIRT & CG
 
 ## Reference
 
