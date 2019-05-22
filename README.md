@@ -23,7 +23,7 @@ Matlab Inversion Collaboration, including iterative methods and global optimizat
 
 ## Example
 
-There are two examples to demonstrate how to use these matlab function:
+There are two examples to demonstrate how to use these `matlab` functions:
 
 - [example1.m](example1.m) for LM, GS, MC, SA & GA
 - [example2.m](example2.m) for KA, ART, SIRT & CG
