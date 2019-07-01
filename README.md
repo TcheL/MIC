@@ -1,6 +1,6 @@
 # MIC
 
-Matlab Inversion Collaboration, including iterative methods and global optimization methods.
+Matlab Inversion Collection, including iterative methods and global optimization methods.
 
 ## License
 
