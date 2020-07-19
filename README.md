@@ -2,6 +2,8 @@
 
 Matlab Inversion Collection, including iterative methods and global optimization methods.
 
+[![View MIC on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://ww2.mathworks.cn/matlabcentral/fileexchange/78390-mic)
+
 ## License
 
 [The MIT License](https://tchel.mit-license.org)
