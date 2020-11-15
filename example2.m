@@ -3,7 +3,7 @@ function example2()
 %% Basic parameters
 mtrue = [-2.3, 1.2, 2.0, 0.4, -0.8]';
 
-G = rand(7,5).*3;
+G = rand(7, 5).*3;
 
 % G = [    1,  3.5,    0, -1.5,  1.2;
 %          0,  1.5,    2,    2,  0.5;
