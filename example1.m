@@ -24,14 +24,14 @@ d = myfun(mtrue, x);
 % 
 % [mhgs, rhgs] = HighorderGridsearch(@myfun, mrange, nsample, x, d)
 
-%% Mento Carlo Method
+%% Monte Carlo Method
 % mrange = [ 0, 5;
 %           -1, 4;
 %            0, 6];
 % nsample = [31, 31, 31]';
 % 
-% [mmtc, rmtc] = MentoCarlo(@myfun, mrange, x, d)
-% [mamc, ramc] = AdaptiveMentoCarlo(@myfun, mrange, x, d)
+% [mmtc, rmtc] = MonteCarlo(@myfun, mrange, x, d)
+% [mamc, ramc] = AdaptiveMonteCarlo(@myfun, mrange, x, d)
 
 %% Simulate Annealing Method
 % temp = 100.0*exp(-0.1*(1:1:100));

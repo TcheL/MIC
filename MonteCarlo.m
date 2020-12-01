@@ -1,8 +1,8 @@
-function [msltn, rsdl2norm] = MentoCarlo(fwdfun, pararange, obsvstn, obsvdat)
+function [msltn, rsdl2norm] = MonteCarlo(fwdfun, pararange, obsvstn, obsvdat)
 %
-% [msltn, rsdl2norm] = MentoCarlo(fwdfun, pararange, obsvstn, obsvdat)
+% [msltn, rsdl2norm] = MonteCarlo(fwdfun, pararange, obsvstn, obsvdat)
 %
-% This is a Mento Carlo inversion program for the problem
+% This is a Monte Carlo inversion program for the problem
 % obsvdat = fwdfun(msltn, obsvstn) in the range restrain pararange of
 % model parameters.
 %
@@ -25,7 +25,7 @@ function [msltn, rsdl2norm] = MentoCarlo(fwdfun, pararange, obsvstn, obsvdat)
 %          obsvdat = fwdfun(msltn, obsvstn).
 
 [paranum, ~] = size(pararange);                                                % paranum is the number of model parameters.
-itsmax = 100000;                                                               % the maximum time of Mento Carlo iteration.
+itsmax = 100000;                                                               % the maximum time of Monte Carlo iteration.
 
 modelset = NaN*ones(paranum, itsmax);                                          % the generated model set, every column represents a model.
 r2normset = Inf*ones(1, itsmax);                                               % the set of the 2-norm of the residual for all models of the modelset.

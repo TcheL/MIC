@@ -19,7 +19,7 @@ Matlab Inversion Collection, including iterative methods and global optimization
 ### Global optimization methods
 
 - [GS](HighorderGridsearch.m): Grid-Search method
-- [MC](MentoCarlo.m): Monte-Carlo method
+- [MC](MonteCarlo.m): Monte-Carlo method
 - SA: Simulated Annealing method, including [Metropolis](Metropolis.m) and [HeatBath](HeatBath.m)
 - [GA](StandardGeneticAlgorithm.m): Genetic Algorithm
 

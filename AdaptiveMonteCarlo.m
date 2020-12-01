@@ -1,9 +1,9 @@
-function [msltn, rsdl2norm] = AdaptiveMentoCarlo(fwdfun, pararange, obsvstn, ...
+function [msltn, rsdl2norm] = AdaptiveMonteCarlo(fwdfun, pararange, obsvstn, ...
   obsvdat)
 %
-% [msltn, rsdl2norm] = AdaptiveMentoCarlo(fwdfun, pararange, obsvstn, obsvdat)
+% [msltn, rsdl2norm] = AdaptiveMonteCarlo(fwdfun, pararange, obsvstn, obsvdat)
 %
-% This is a adaptive Mento Carlo inversion program for the problem
+% This is a adaptive Monte Carlo inversion program for the problem
 % obsvdat = fwdfun(msltn, obsvstn) in the range restrain pararange of
 % model parameters.
 %
@@ -25,10 +25,10 @@ function [msltn, rsdl2norm] = AdaptiveMentoCarlo(fwdfun, pararange, obsvstn, ...
 %          obsvdat = fwdfun(msltn, obsvstn).
 
 [paranum, ~] = size(pararange);                                                % paranum is the number of model parameters.
-modelnum = 1000;                                                               % the number of the generated model in every iteration step, i.e. do modelnum sets of parallel Mento Carlo search.
-itsmax = 100;                                                                  % the maximum time of adaptive Mento Carlo iteration.
+modelnum = 1000;                                                               % the number of the generated model in every iteration step, i.e. do modelnum sets of parallel Monte Carlo search.
+itsmax = 100;                                                                  % the maximum time of adaptive Monte Carlo iteration.
 
-modelbestprev = pararange(:, 1)*ones(1, modelnum);                             % the previous best models, every column respresents the best model in all previous iteration steps for a set of parallel Mento Carlo search.
+modelbestprev = pararange(:, 1)*ones(1, modelnum);                             % the previous best models, every column respresents the best model in all previous iteration steps for a set of parallel Monte Carlo search.
 r2normsetprev = Inf*ones(1, modelnum);                                         % the set of the 2-norm of the residual for all models of the modelbestprev.
 modelset = NaN*ones(paranum, modelnum);                                        % the new-generated model set, every column represents a model.
 r2normset = Inf*ones(1, modelnum);                                             % the set of the 2-norm of the residual for all models of the modelset.
